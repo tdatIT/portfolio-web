@@ -9,8 +9,7 @@
   <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon" />
 
   <!--=============== REMIX ICONS ===============-->
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
-
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
   <!--=============== CSS ===============-->
 
   <link rel="stylesheet" href="assets/css/styles.css" />
@@ -29,20 +28,18 @@
       <div class="profile__data">
         <div class="profile__border">
           <div class="profile__perfil">
-            <img src="assets/img/bg-avt.png" alt="" />
+            <img src="assets/img/new_avt.png" alt="" />
           </div>
         </div>
 
         <h2 class="profile__name">Tran Tien Dat</h2>
 
         <h3 class="profile__profession">
-          Backend Developer<br />
+          Software Engineer<br />
           <a href="mailto:tdat.it2k2@gmail.com">tdat.it2k2@gmail.com</a>
         </h3>
         <ul class="profile__social">
-          <a href="https://www.instagram.com/tdat.hj" target="_blank" class="profile__social-link">
-            <i class="ri-instagram-line"></i>
-          </a>
+
           <a href="https://www.facebook.com/Datonephu/" target="_blank" class="profile__social-link">
             <i class="ri-facebook-box-line"></i>
           </a>
@@ -57,21 +54,21 @@
 
       <div class="profile__info grid">
         <div class="profile__info-group">
-          <h3 class="profile__info-number">4th</h3>
+          <h3 class="profile__info-number">2+</h3>
           <p class="profile__info-description">
-            year <br />
-            student
+            years<br />
+            exp
           </p>
         </div>
         <div class="profile__info-group">
-          <h3 class="profile__info-number">3.27</h3>
-          <p class="profile__info-description">current<br/>GPA<br/></p>
+          <h3 class="profile__info-number">10+</h3>
+          <p class="profile__info-description">services<br />built</p>
         </div>
         <div class="profile__info-group">
-          <h3 class="profile__info-number">5+</h3>
+          <h3 class="profile__info-number">99.9%</h3>
           <p class="profile__info-description">
-            language <br />
-            programing
+            uptime<br />
+            SLA
           </p>
         </div>
       </div>
@@ -80,13 +77,15 @@
         <a onclick="MicroModal.show('modal-2')" data-bs-toggle="modal" target="_blank" data-micromodal-trigger="modal-2"
           class="button">Resume<i class="ri-download-line"></i> </a>
         <div class="profile__buttons-small">
+          <!-- Zalo -->
           <a onclick="MicroModal.show('modal-1')" data-bs-toggle="modal" data-bs-target="#qr-zalo" target="_blank"
             class="button button__small button__gray" data-micromodal-trigger="modal-1">
             <img width="20" height="20" src="https://img.icons8.com/ios/50/zalo.png" alt="zalo" />
           </a>
-
-          <a href="https://m.me/Datonephu" target="_blank" class="button button__small button__gray">
-            <i class="ri-messenger-line"></i></a>
+          <!-- Telegram -->
+          <a href="https://t.me/tdat2k2" target="_blank" class="button button__small button__gray">
+            <i class="ri-telegram-line"></i>
+          </a>
         </div>
       </div>
     </div>
@@ -96,7 +95,7 @@
     <section class="filters container">
       <ul class="filters__content">
         <button class="filters__button filter-tab-active" data-target="#projects">
-          Projects
+          Experience
         </button>
         <button class="filters__button" data-target="#skills">Skills</button>
         <button class="filters__button" data-target="#certificate">
@@ -105,255 +104,157 @@
       </ul>
 
       <div class="filters__sections">
-        <!--=============== PROJECTS ===============-->
-        <div class="projects__content grid filters__active" data-content id="projects">
-          <article class="projects__card">
-            <img src="assets/img/recauction.jpg" alt="" class="projects__img" />
-            <div class="projects__modal">
-              <div>
-                <span class="projects__subtitle">Spring Boot + Thymeleaf</span>
-                <h3 class="projects__title">
-                  RecAuction (e-commerce web using auction)
-                </h3>
-                <a href="https://github.com/tdatIT/rec-auction-web" class="projects__button button button__small">
-                  <i class="ri-link"></i>
-                </a>
+        <!--=============== EXPERIENCE ===============-->
+        <div class="timeline__wrapper filters__active" data-content id="projects">
+          <div class="timeline__container">
+            <div class="timeline__line"></div>
+
+            <div class="timeline__item timeline__item--right">
+              <div class="timeline__dot"></div>
+              <div class="timeline__card">
+                <img src="assets/img/ttc_agris_logo.jpg" alt="TTC AgriS" class="timeline__logo">
+                <div class="timeline__info">
+                  <h3 class="timeline__company">TTC AgriS</h3>
+                  <span class="timeline__date">Oct 2025 - Now</span>
+                  <p class="timeline__position">Middle Backend Developer</p>
+                </div>
               </div>
             </div>
-          </article>
-          <article class="projects__card">
-            <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
-            <img src="assets/img/tda.png" alt="" class="projects__img" />
 
-            <div class="projects__modal">
-              <div>
-                <span class="projects__subtitle">RESTfulAPI Spring Boot</span>
-                <h3 class="projects__title">TDA Web Service (Backend)</h3>
-                <a href="https://github.com/tdatIT/tda-store-restful-api" class="projects__button button button__small">
-                  <i class="ri-link"></i>
-                </a>
+
+            <div class="timeline__item timeline__item--left">
+              <div class="timeline__dot"></div>
+              <div class="timeline__card">
+                <img src="assets/img/futa.png" alt="Futa Group" class="timeline__logo">
+                <div class="timeline__info">
+                  <h3 class="timeline__company">Futa Group</h3>
+                  <span class="timeline__date">May 2024 - Oct 2025</span>
+                  <p class="timeline__position">Junior Backend Developer</p>
+                </div>
               </div>
             </div>
-          </article>
-          <article class="projects__card">
-            <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
-            <img src="assets/img/latipe.jpg" alt="" class="projects__img" />
 
-            <div class="projects__modal">
-              <div>
-                <span class="projects__subtitle">Golang + Fiber + Gorm + RabbitMQ + Prometheus + Grafana + Docker</span>
-                <h3 class="projects__title">
-                  Latipe Backend (Microservice)
-                </h3>
-                <a href="https://github.com/Latipe-EC"
-                  class="projects__button button button__small">
-                  <i class="ri-link"></i>
-                </a>
+            <div class="timeline__item timeline__item--right">
+              <div class="timeline__dot"></div>
+              <div class="timeline__card">
+                <img src="assets/img/hcmute.png" alt="HCMUTE" class="timeline__logo">
+                <div class="timeline__info">
+                  <h3 class="timeline__company">HCMUTE</h3>
+                  <span class="timeline__date">Oct 2025</span>
+                  <p class="timeline__position">Graduate - Distinction</p>
+                </div>
               </div>
             </div>
-          </article>
-          <article class="projects__card">
-            <img src="assets/img/tda-moblie.png" alt="" class="projects__img" />
 
-            <div class="projects__modal">
-              <div>
-                <span class="projects__subtitle">Jetpack Compose</span>
-                <h3 class="projects__title">TDA Laptop App (Android)</h3>
-                <a href="https://github.com/tdatIT/tda-mobile-app" class="projects__button button button__small">
-                  <i class="ri-link"></i>
-                </a>
+            <div class="timeline__item timeline__item--left">
+              <div class="timeline__dot"></div>
+              <div class="timeline__card">
+                <img src="assets/img/datvietvac.png" alt="DatVietVAC" class="timeline__logo">
+                <div class="timeline__info">
+                  <h3 class="timeline__company">DatVietVAC</h3>
+                  <span class="timeline__date">July 2023 - Nov 2023</span>
+                  <p class="timeline__position">Intern Backend Developer</p>
+                </div>
               </div>
             </div>
-          </article>
-          <article class="projects__card">
-            <img src="assets/img/streamlit.png" alt="" class="projects__img" />
-
-            <div class="projects__modal">
-              <div>
-                <span class="projects__subtitle">Python + Tensorflow + OpenCV + VietOCR</span>
-                <h3 class="projects__title">Vietnamese handwritten recognition</h3>
-                <a href="https://github.com/tdatIT/Vietnamese-handwritten-recognition" class="projects__button button button__small">
-                  <i class="ri-link"></i>
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <article class="projects__card">
-            <img src="assets/img/project5.jpg" alt="" class="projects__img" />
-
-            <div class="projects__modal">
-              <div>
-                <span class="projects__subtitle">And more...</span>
-                <h3 class="projects__title">Repo in github</h3>
-                <a href="https://github.com/tdatIT" class="projects__button button button__small">
-                  <i class="ri-link"></i>
-                </a>
-              </div>
-            </div>
-          </article>
+          </div>
         </div>
         <div class="skills__content grid" data-content id="skills">
           <div class="skills__area">
-            <h3 class="skills__title">Backend</h3>
+            <h3 class="skills__title">Technologies</h3>
             <div class="skills__box">
               <div class="skills__group">
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+                  <div>
+                    <h3 class="skills__name">Go</h3>
+                    <span class="skills__level">Echo, Fiber, Gin, GORM</span>
+                  </div>
+                </div>
                 <div class="skills__data">
                   <i class="ri-checkbox-circle-line"></i>
                   <div>
                     <h3 class="skills__name">Java</h3>
-                    <span class="skills__level">Spring boot, MVC, JPA, Security,... </span>
-                  </div>
-                </div>
-                <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
-
-                  <div>
-                    <h3 class="skills__name">Golang</h3>
-                    <span class="skills__level">Gin, Fiber, Gorm, Viper, Wire,... </span>
-                  </div>
-                </div>
-                <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
-
-                  <div>
-                    <h3 class="skills__name">Mobile (Kotlin)</h3>
-                    <span class="skills__level">Jetpack Compose</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="skills__group">
-                <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
-
-                  <div>
-                    <h3 class="skills__name">MySQL</h3>
-                    <span class="skills__level">2 years</span>
+                    <span class="skills__level">Spring Boot, JPA, Spring Security, Spring MVC</span>
                   </div>
                 </div>
                 <div class="skills__data">
                   <i class="ri-checkbox-circle-line"></i>
                   <div>
-                    <h3 class="skills__name">SQLServer </h3>
-                    <span class="skills__level">2 years</span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
-                  <div>
-                    <h3 class="skills__name">MongoDB </h3>
-                    <span class="skills__level">2 years</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="skills__area">
-            <h3 class="skills__title">Frontend</h3>
-            <div class="skills__box">
-              <div class="skills__group">
-                <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
-
-                  <div>
-                    <h3 class="skills__name">HTML/CSS/JS</h3>
-                    <span class="skills__level">2 years</span>
-                  </div>
-                </div>
-                <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
-
-                  <div>
-                    <h3 class="skills__name">TypeScript</h3>
-                    <span class="skills__level">3 months</span>
-                  </div>
-
-                  
-                </div>
-
-              
-              </div>
-
-              <div class="skills__group">
-                <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
-                  <div>
-                    <h3 class="skills__name">Bootstrap/JQuery</h3>
-                    <span class="skills__level">2 years</span>
+                    <h3 class="skills__name">Node.JS</h3>
+                    <span class="skills__level">Medusa.js, TypeORM</span>
                   </div>
                 </div>
                 <div class="skills__data">
                   <i class="ri-checkbox-circle-line"></i>
                   <div>
-                    <h3 class="skills__name">Vue</h3>
-                    <span class="skills__level">3 months</span>
+                    <h3 class="skills__name">Database</h3>
+                    <span class="skills__level">PostgreSQL, MySQL, MongoDB, Redis</span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+                  <div>
+                    <h3 class="skills__name">Message Queue</h3>
+                    <span class="skills__level">RabbitMQ, NATS</span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+                  <div>
+                    <h3 class="skills__name">ETL</h3>
+                    <span class="skills__level">Apache Nifi, Bytebase, Metabase</span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+                  <div>
+                    <h3 class="skills__name">Architecture</h3>
+                    <span class="skills__level">Microservice, RESTful API, gRPC</span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+                  <div>
+                    <h3 class="skills__name">Logging & Monitoring</h3>
+                    <span class="skills__level">Grafana, Prometheus, Signoz</span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+                  <div>
+                    <h3 class="skills__name">Containerization</h3>
+                    <span class="skills__level">Docker, Kubernetes</span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <i class="ri-checkbox-circle-line"></i>
+                  <div>
+                    <h3 class="skills__name">Version Control</h3>
+                    <span class="skills__level">Git, GitHub, GitLab, Azure DevOps</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        
+
           <div class="skills__area">
-            <h3 class="skills__title">Tool</h3>
+            <h3 class="skills__title">AI Tools</h3>
             <div class="skills__box">
               <div class="skills__group">
                 <div class="skills__data">
                   <i class="ri-checkbox-circle-line"></i>
                   <div>
-                    <h3 class="skills__name">Git</h3>
-                    <span class="skills__level">Basic</span>
-                  </div>
-                </div>
-                <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
-                  <div>
-                    <h3 class="skills__name">RabbitMQ</h3>
-                    <span class="skills__level">Basic </span>
-                  </div>
-                </div>
-              </div>
-              <div class="skills__group">
-                <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
-                  <div>
-                    <h3 class="skills__name">Redis</h3>
-                    <span class="skills__level">Basic</span>
-                  </div>
-                </div>
-                <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
-                  <div>
-                    <h3 class="skills__name">Prometheus</h3>
-                    <span class="skills__level">Basic</span>
+                    <h3 class="skills__name">Copilot, Claude, Cursor, ChatGPT</h3>
+                    <span class="skills__level">Agentic programming, code completion & suggestion</span>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="skills__area">
-            <h3 class="skills__title">Cloud/Server</h3>
-            <div class="skills__box">
-              <div class="skills__group">
-                <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
-                  <div>
-                    <h3 class="skills__name">Google Cloud</h3>
-                    <span class="skills__level">Basic</span>
-                  </div>
-                </div>
-              </div>
-              <div class="skills__group">
-                <div class="skills__data">
-                  <i class="ri-checkbox-circle-line"></i>
-                  <div>
-                    <h3 class="skills__name">LinuxCLI</h3>
-                    <span class="skills__level">Basic</span>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <p class="skills__note">
+              <i class="ri-lightbulb-line"></i>
+              Use critical thinking to validate AI outputs.
+            </p>
           </div>
         </div>
         <div class="projects__content grid filters" data-content id="certificate">
@@ -422,7 +323,7 @@
 
   <!--=============== FOOTER ===============-->
   <footer class="footer container">
-    <span class="footer__copy"> TdatIT 07-2022 - updated 01/2024 </span>
+    <span class="footer__copy"> TdatIT 07-2022 - updated 03/2026 </span>
     <div class="elfsight-app-a95fbc8c-2de4-44ad-a12c-a11f6d5f764c"></div>
   </footer>
 
@@ -446,15 +347,15 @@
     <div class="modal__overlay" tabindex="-1" data-micromodal-close>
       <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
         <header class="modal__header">
-          <h2 class="modal__title" id="modal-2-title">Download message</h2>
+          <h2 class="modal__title" id="modal-2-title">Download Resume</h2>
         </header>
         <main class="modal__content" id="modal-2-content">
           <p>Please enter "hello" in the box to confirm the download 💞</p>
-          <input id="confirm-input" class="input-box" type="text">
+          <input id="confirm-input" class="input-box" type="text" placeholder="Type 'hello' here">
         </main>
         <footer class="modal_footer">
-          <button id="confirm-btn" class="modal__btn modal__btn-primary">Yes✅</button>
-          <button class="modal__btn modal__btn-arler" data-micromodal-close>Cancel❌</button>
+          <button id="confirm-btn" class="modal__btn modal__btn-primary">Yes</button>
+          <button class="modal__btn modal__btn-arler" data-micromodal-close>Cancel</button>
         </footer>
       </div>
     </div>
@@ -464,10 +365,7 @@
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
   <script src="assets/js/main.js"></script>
-  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-  <df-messenger intent="WELCOME" chat-title="tdatIT" agent-id="79a4998c-9e36-419b-a890-efcdb2b83f58"
-    language-code="vi"></df-messenger>
-    
+
 </body>
 
 </html>
